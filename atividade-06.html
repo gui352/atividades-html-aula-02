@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexto exemplo</title>
+</head>
+<body>
+    <form action="/form" style="width: 25%;">
+        <fieldset class="formulario"> 
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome:</label>
+            <input type="text">
+
+            <br><br>
+
+            <label>Idade:</label>
+            <input type="text">
+        </fieldset>
+
+        <fieldset class="formulario"> 
+            <legend>Dados Profissionais</legend>
+
+            <label>Escolaridade:</label>
+            <select>
+                <option value="1">Ensino Fundamental</option>
+                <option value="2" selected>Ensino Médio</option>
+                <option value="3">Ensino Superior</option>
+            </select>
+
+            <br>
+            
+            <label>Área de atuação:</label>
+            <input type="radio" id="gerencia" name="area" value="gerencia">
+            <label for="gerencia">Gerência</label>
+            <input type="radio" id="financeiro" name="area" value="financeiro">
+            <label for="financeiro">Financeiro</label>
+            <input type="radio" id="recepcao" name="area" value="recepcao">
+            <label for="recepcao">Recepção</label>
+        </fieldset>
+    </form>
+</body>
+</html>

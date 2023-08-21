@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sétimo exemplo</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="/send" style="width: 30%;">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label>Nome:</label>
+            <input type="text">
+            <br><br>
+
+            <label>Endereço:</label>
+            <input type="text">
+            <br><br>
+
+            <label>Cidade:</label>
+            <input type="text">
+            <br><br>
+
+            <label>Estado:</label>
+            <select name="" id="">
+                <option value="sp">São Paulo</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="pr">Paraná</option>
+            </select>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados profissionais</legend>
+            <div>
+                <label for="/send">Natureza do Cargo:</label><br>
+                <input type="radio" id="gerencia" name="area" value="gerencia">
+                <label for="gerencia">Gerência</label>
+                <input type="radio" id="financeiro" name="area" value="financeiro">
+                <label for="financeiro">Financeiro</label>
+                <input type="radio" id="recepcao" name="area" value="recepcao">
+                <label for="recepcao">Recepção</label>
+                <input type="radio" id="administrativo" name="area" value="administrativo">
+                <label for="administrativo">Administrativo</label>
+                <input type="radio" id="juridico" name="area" value="juridico">
+                <label for="juridico">Jurídico</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="/send">Área de Interesse</label><br>
+                <input type="checkbox">
+                <label for="Computação">Computação</label>
+                <input type="checkbox">
+                <label for="Computação">Biologia</label>
+                <input type="checkbox">
+                <label for="Computação">Meio Ambiente</label>
+                <input type="checkbox">
+                <label for="Computação">Engenharia</label>
+                <input type="checkbox">
+                <label for="Computação">História</label>
+            </div>
+
+            <label>Mini-currículo:</label>
+            <textarea name="curriculo" id="curriculo" cols="40" rows="5"></textarea>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
